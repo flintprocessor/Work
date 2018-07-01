@@ -46,12 +46,12 @@ open class Work: Operation {
     private var standardErrorRawString: String
 
     /// Standard output pipe.
-    open let standardOutputPipe: Pipe
+    public let standardOutputPipe: Pipe
     /// Standard error pipe.
-    open let standardErrorPipe: Pipe
+    public let standardErrorPipe: Pipe
 
     /// Process object.
-    open let task: Process
+    public let task: Process
     /// Standard output handler.
     open var standardOutputHandler: ((String) -> Void)?
     /// Standard error handler.
